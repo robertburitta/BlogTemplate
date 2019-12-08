@@ -8,5 +8,12 @@ $(document).ready(function() {
     })
 
     //owl carousel
-    $('.owl-carousel').owlCarousel();
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        dots: false,
+        nav: true,
+        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')]
+    });
 });

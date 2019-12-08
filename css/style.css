@@ -66,6 +66,19 @@ span {
     font-family: var(--Abel);
 }
 
+.container {
+    margin: 0 5vw;
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+p {
+    font-family: var(--Lexend);
+    color: var(--text-light)3;
+}
+
 /* End Global Styles */
 
 /* Start Navigation */
@@ -189,6 +202,7 @@ main .blog {
     background-position: right;
     height: 100vh;
     width: 100%;
+    background-size: 65%;
 }
 
 main .blog .blog-post {
@@ -218,7 +232,102 @@ main .blog-content span {
     display: block;
 }
 
+.owl-carousel .owl-nav {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev, 
+.owl-nav .owl-next .owl-nav-next {
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+    color: var(--midnight);
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    outline: none;
+}
+
 /* Blog carousel */
+
+/* Site Content */
+
+.site-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.post-content {
+    width: 100%;
+}
+
+.site-content .post-content > .post-image, .post-title {
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.site-content .post-content > .post-image .post-info {
+    background: var(--sky);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 22vw;
+    border-radius: 3rem;
+}
+
+.site-content .post-content > .post-image > div {
+    overflow: hidden;
+}
+
+.site-content .post-content > .post-image .img {
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.site-content .post-content > .post-image .img:hover {
+    transform: scale(1.3);
+}
+
+.site-content .post-content > .post-image .post-info span {
+    margin: 0 .5rem;
+}
+
+.post-content .post-title a {
+    font-family: var(--Anton);
+    font-size: 1.5rem;
+}
+
+.site-content .post-content .post-title .post-btn {
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: var(--sky);
+}
+
+.site-content .pagination {
+    justify-content: center;
+    color: var(--text-gray);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a {
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    font-family: var(--Lexend);
+}
+
+.site-content .pagination .pages {
+    background: var(--text-gray);
+    color: white;
+}
+
+/* Site Content */
 
 /* Responsive styles */
 @media only screen and (max-width: 750px) {
